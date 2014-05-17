@@ -1,0 +1,39 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+   package="com.joannedeng.astrodoodle"
+   android:versionCode="2"
+   android:versionName="1.1" >
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-sdk
+       android:minSdkVersion="8"
+       android:targetSdkVersion="17" />
+
+    <application
+       android:icon="@drawable/xhdpi"
+       android:label="AstroDoodle" >
+       
+        <activity
+           android:name="com.joannedeng.astrodoodle.SampleGame"
+           android:configChanges="keyboard|keyboardHidden|orientation"
+           android:label="RobotGame"
+           android:background="#FFFFFF"
+           android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        </LinearLayout>
+    
+
+</manifest>
