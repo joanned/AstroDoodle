@@ -1,5 +1,4 @@
 
-
 package com.joannedeng.astrodoodle;
 
 import java.io.InputStream;
@@ -140,9 +139,6 @@ public class MainClass extends Screen {
 			startMonsterBullet = System.currentTimeMillis();
 		}
 
-		/*
-		 * if(astroShooter.isPressedDown()==false){ astroShooter.moveDown(); }
-		 */
 
 		// handle touch
 		int len = touchEvents.size();
@@ -383,6 +379,7 @@ public class MainClass extends Screen {
 		}
 	}
 
+	//used to clear up everything after game is over
 	private void nullify() {
 		paint = null;
 		paint2 = null;
@@ -407,13 +404,15 @@ public class MainClass extends Screen {
 
 	}
 
+	//graphics drawn when game is paused
 	private void drawPausedUI() {
 		Graphics g = game.getGraphics();
 		g.drawARGB(155, 0, 0, 0);
 		g.drawString("Resume", 400, 165, paint2);
 		g.drawString("Menu", 400, 360, paint2);
 	}
-
+	
+	//graphics drawn when game is over
 	private void drawGameOverUI() {
 		Graphics g = game.getGraphics();
 		g.drawRect(0, 0, width, height, Color.WHITE);
