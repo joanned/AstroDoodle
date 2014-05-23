@@ -57,10 +57,12 @@ public class Rock {
 		}
 	}
 
+	//move rocks off the screen; it will be removed from array
 	public void wipe() {
 		x = -100;
 	}
 
+	//getters and setters
 	public int getX() {
 		return x;
 	}
