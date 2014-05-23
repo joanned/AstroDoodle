@@ -105,6 +105,7 @@ public class PewPew {
 		}
 	}
 
+	//getters and setters
 	public int getX() {
 		return x;
 	}
