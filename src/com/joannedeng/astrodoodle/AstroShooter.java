@@ -13,7 +13,6 @@ public class AstroShooter {
 	private int centerX = 100;
 	private int centerY = 225;
 	private boolean collide = false;
-	// private boolean pressedDown = false;
 	private int height = AndroidGame.getHeight();
 	private int speedY = 0;
 	public static Rect rect = new Rect(0, 0, 0, 0);
@@ -83,12 +82,5 @@ public class AstroShooter {
 	public void setCollide(boolean collide) {
 		this.collide = collide;
 	}
-
-	/*
-	 * public boolean isPressedDown() { return pressedDown; }
-	 * 
-	 * public void setPressedDown(boolean pressedDown) { this.pressedDown =
-	 * pressedDown; }
-	 */
 
 }
