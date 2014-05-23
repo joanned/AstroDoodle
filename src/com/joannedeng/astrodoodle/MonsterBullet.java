@@ -23,6 +23,7 @@ public class MonsterBullet {
 		visible = true;
 		health = 1;
 
+		//calculations to aim the fireballs at the character
 		angle = Math.toDegrees(((Math.atan2((robotY - y), (x - robotX)))));
 		temp = (int) ((Math.tan(Math.toRadians(angle))) * speedX);
 
@@ -53,6 +54,7 @@ public class MonsterBullet {
 		}
 	}
 
+	//getters and setters
 	public int getX() {
 		return x;
 	}
