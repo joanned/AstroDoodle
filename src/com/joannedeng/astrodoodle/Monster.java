@@ -61,6 +61,7 @@ public class Monster {
 		}
 	}
 
+	//getters and setters
 	public int getX() {
 		return x;
 	}
