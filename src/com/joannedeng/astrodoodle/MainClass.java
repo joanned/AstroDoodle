@@ -1,6 +1,4 @@
-//make compatible for all screen sizes**TEST
-//comment code
-//better buttons
+
 
 package com.joannedeng.astrodoodle;
 
